@@ -2,14 +2,40 @@
     position: fixed;
     bottom: 10px;
     right: 10px;
-    border: 1px dashed grey;
+    border: 1px solid grey;
     height: 350px;
     width: 300px;
     background: white;
-    padding: 5px;
+    /* padding: 5px; */
     box-shadow: 1px 1px 1px 1px lightgrey;
     display:none;
  }
+ #header{
+     height:50px;
+     background-color:#29487d;
+ }
+ #online-dot{
+     color:white;
+     width:4px;
+     height:4px;
+     position: relative;
+    top: 15px;
+    left: 20px;  
+ }
+ #chatroom {
+    position: relative;
+    left: 40px;
+    top: 15px;
+    font-size: 15px;
+    color: white;
+    font-weight:600;
+}
+#cross {
+    position: relative;
+    left: 60%;
+    top: 13px;
+    color: white;
+}
 #chat-messages-list {
     list-style: none;
     padding: 10px;
@@ -39,7 +65,7 @@
     height: 24%;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    margin-top:15px;
 }
  #chat-message-input {
     height: 50%;

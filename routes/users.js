@@ -13,7 +13,7 @@ router.get('/home', usersController.home);                                  //ro
 //use passport as a middleware to authenticate
 router.post('/create-session', passport.authenticate(                       //route for creating a session when a user logs in 
     'local',
-    {failureRedirect: '/users/sign_in'},
+    {failureRedirect: '/users/sign_up'},
 ), usersController.createSession);
 
 router.get('/sign_up', usersController.signUp);                                     //route for sign up

@@ -10,6 +10,8 @@ class ChatEngine{
         }
 
     }
+
+
     connectionHandler(){
         let self = this;
 
@@ -20,7 +22,7 @@ class ChatEngine{
             self.socket.emit('join_room', {
                 user_email: self.userEmail,
                 user_name:self.userName,
-                chatroom: 'Being_social'
+                chatroom: 'codeial'
             });
 
             self.socket.on('user_joined', function(data){
@@ -39,7 +41,7 @@ class ChatEngine{
                     message: msg,
                     user_email: self.userEmail,
                     user_name:self.userName,
-                    chatroom: 'being_social'
+                    chatroom: 'codeial'
                 });
             }
         });
@@ -60,6 +62,9 @@ class ChatEngine{
                 'html': data.message
             }));
 
+            // newMessage.append($('<sub>', {
+            //     'html': data.user_email
+            // }));
             newMessage.append($('<sub>', {
                 'html': data.user_name
             }));

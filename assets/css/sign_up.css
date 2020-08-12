@@ -10,7 +10,8 @@
 }
 #network-logo{
     margin-top:50px;
-    margin-left:80px;
+    padding-left:80px;
+    width:100%;
 }
 .label{
     font-size:20px;
